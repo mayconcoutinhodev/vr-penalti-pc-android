@@ -1,0 +1,26 @@
+# Dependências
+node_modules/
+
+# Build do Next.js
+.next/
+
+# Certificados locais
+certificates/
+hub/certificates/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

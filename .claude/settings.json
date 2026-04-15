@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"^\\(next|react|three\\)$\")",
+      "Bash(node -e \"const n=require\\('next/package.json'\\); const r=require\\('react/package.json'\\); const t=require\\('three/package.json'\\); console.log\\('next',n.version,'react',r.version,'three',t.version\\)\")",
+      "Bash(node -e \"const pkg=JSON.parse\\(require\\('fs'\\).readFileSync\\('node_modules/three/package.json','utf8'\\)\\); console.log\\('three version:', pkg.version\\)\")",
+      "Bash(node -e \"const pkg=JSON.parse\\(require\\('fs'\\).readFileSync\\('node_modules/three/package.json','utf8'\\)\\); console.log\\(JSON.stringify\\(Object.keys\\(pkg.exports\\).slice\\(0,8\\)\\)\\)\")",
+      "Bash(npx next *)"
+    ]
+  }
+}
